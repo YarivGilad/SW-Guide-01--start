@@ -1,0 +1,55 @@
+@import url(./_reset.css);
+@import url(./_base.css);
+@import url(./_typography.css);
+
+:root{
+    --primary : blueviolet;
+    --secondary: rgba(101, 183, 255, 0.252);
+    --text: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper {
+  padding-top: 10rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  color: var(--text);
+
+  > nav ul {
+    display: flex;
+
+    > li > a{
+        padding: 0.5rem 1.6rem;
+        background-color: var(--secondary);
+    }
+
+    > li.current > a {
+      background-color: var(--primary);
+      color: white;
+    }
+  }
+
+  > header {
+      margin: 2rem 0;
+  }
+
+  > main {
+        > h2{
+        margin: 2rem 0;
+        margin-bottom: 0.8rem;
+        font-weight: bolder;
+        font-size: 2.2rem;
+        color: var(--primary);
+        }
+
+        > p{
+            padding: 1.8rem;
+            line-height: 2.2rem;
+            background-color: var(--secondary);
+        }
+    }
+
+    > img {
+        margin-top: 1.6rem;
+        width: 100%;
+    }
+}
